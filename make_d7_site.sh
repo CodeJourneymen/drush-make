@@ -45,8 +45,8 @@ drush en context_ui -y
 
 drush en entity -y
 drush en entity_token -y
-drush en rules -y
-drush en rules_admin -y
+#drush en rules -y
+#drush en rules_admin -y
 
 drush en token -y
 drush en libraries -y
@@ -54,11 +54,17 @@ drush en libraries -y
 #devel stuff
 drush en devel -y
 drush en devel_generate -y
-drush en omega_tools -y
-drush en delta -y
-drush en delta_ui -y
-drush en delta_color -y
-drush en delta_blocks -y
+#drush en omega_tools -y
+#drush en delta -y
+#drush en delta_ui -y
+#drush en delta_color -y
+#drush en delta_blocks -y
+
+#drush en entityreference -y
+#drush en entityreference_prepopulate -y
+drush en views_bulk_operations -y
+#drush en og_extras -y
+#drush en og -y
 
 drush cc all
 
