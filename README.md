@@ -15,3 +15,22 @@ The admin email is <email>
 
 The script also does a drush site-install, so you can immediately go to the site.
 The mysql username/password are hard coded to root/root in the shell script you will have to edit to match you mysql username/password.
+
+
+Also included is my gitconfig file.
+Add anything in this you like to your own ~/.gitconfig file
+most useful is 
+$ git log
+which pretty prints out  the git log in a consise way.
+And when you patch some files (that you don't want to commit, but don't want to show up as changed al the time) you can use ignore/unignore/ignored
+
+$ git ignore <file>
+treats a file like it's unchanged. i.e. won't make your repo dirty
+
+$ git unignore <file>
+makes you previously ignored file now be treated normally by git i.e. if its changed, git statsu will now report it.
+
+$ git ignored
+Lists all teh files you have used $git ignore on.
+
+
