@@ -35,13 +35,13 @@ drush en diff -y
 drush en ctools -y
 drush en views -y
 drush en views_ui -y
-drush en advanced_help -y
+#drush en advanced_help -y
 #drush en environment_indicator -y
 
 drush en features -y
 drush en strongarm -y 
-drush en context -y
-drush en context_ui -y
+#drush en context -y
+#drush en context_ui -y
 
 drush en entity -y
 drush en entity_token -y
@@ -63,8 +63,10 @@ drush en devel_generate -y
 #drush en entityreference -y
 #drush en entityreference_prepopulate -y
 drush en views_bulk_operations -y
-#drush en og_extras -y
 #drush en og -y
+#drush en og_extras -y
+drush en page_manager -y
+drush en panels -y
 
 drush cc all
 

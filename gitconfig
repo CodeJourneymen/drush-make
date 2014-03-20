@@ -1,0 +1,47 @@
+[user]
+	name = <Your name>
+	email = <Your mail address>
+
+[color]
+	branch=auto
+	diff=auto
+	status=auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[alias]
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+	co = checkout
+  s = status
+  c = commit -s
+  l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+  ll = log --stat --abbrev-commit
+  d = diff
+  a = add
+  patch = format-patch --stdout HEAD~1
+  rpatch = reset --hard HEAD~1
+  r = remote -v
+  b = branch -av
+  bv = branch -vv
+  ignore=update-index --assume-unchanged
+  unignore=update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
+
+[filter "trimWhitespace"]
+	clean = trim_whitespace
+[help]
+	autocorrect = 1

@@ -8,7 +8,7 @@ projects[] = views
 projects[] = ctools
 ; Date modules
 projects[] = date
-projects[] = calendar
+;projects[] = calendar
 ; Utility modules
 projects[] = admin_menu
 projects[] = advanced_help
@@ -24,15 +24,19 @@ projects[] = rules
 projects[] = devel
 projects[] = fpa
 projects[] = libraries
-projects[] = omega_tools
-projects[] = delta
-projects[] = omega
+;projects[] = omega_tools
+;projects[] = delta
+;projects[] = omega
 projects[] = og
+projects[] = adaptivetheme
+projects[] = bootstrap
 projects[] = og_extras
 projects[] = entityreference
 projects[] = entityreference_prepopulate
 projects[] = views_bulk_operations
 projects[] = ife
+projects[] = panels
+projects[] = panelizer
 
 ; for openalayers maps also downlaod
 ; geophp geofield geocoder geocoder_autocomplete openlayers mapbox
