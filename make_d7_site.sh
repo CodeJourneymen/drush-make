@@ -27,6 +27,7 @@ drush si --db-url=mysqli://root:root@localhost/$1 --account-name=superadmin --ac
 drush en admin_menu -y
 drush en admin_menu_toolbar -y
 drush dis toolbar -y
+drush dis overlay -y
 #drush dis shortcut -y
 drush en module_filter -y
 drush en fpa -y
