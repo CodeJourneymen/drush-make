@@ -34,6 +34,7 @@ projects[] = og_extras
 projects[] = entityreference
 projects[] = entityreference_prepopulate
 projects[] = views_bulk_operations
+projects[] = ife
 projects[] = panels
 projects[] = panelizer
 
