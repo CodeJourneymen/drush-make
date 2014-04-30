@@ -30,6 +30,7 @@ projects[] = libraries
 projects[] = og
 projects[] = adaptivetheme
 projects[] = bootstrap
+projects[] = jquery_update
 projects[] = og_extras
 projects[] = entityreference
 projects[] = entityreference_prepopulate
