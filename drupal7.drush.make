@@ -38,7 +38,10 @@ projects[] = views_bulk_operations
 projects[] = ife
 projects[] = panels
 projects[] = panelizer
-
+projects[] = adminimal_theme
+projects[adminimal_admin_menu][version] = "1.x-dev"
+projects[] = views_bootstrap
+projects[] = panels_bootstrap_layouts
 ; for openalayers maps also downlaod
 ; geophp geofield geocoder geocoder_autocomplete openlayers mapbox
 
