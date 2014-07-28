@@ -7,6 +7,7 @@ drush dl ctools
 drush dl date
 drush dl calendar
 drush dl admin_menu
+drush dl admin_views
 drush dl advanced_help
 drush dl environment_indicator
 drush dl module_filter
@@ -34,7 +35,9 @@ drush dl adminimal_theme
 drush dl adminimal_admin_menu-7.x-1.x-dev
 drush dl views_bootstrap
 drush dl panels_bootstrap_layouts
-
+drush dl media-7.x-2.0-alpha3
+drush dl file_entity
+drush dl ckeditor
 
 
 
@@ -87,6 +90,8 @@ drush vset admin_theme adminimal -y
 drush vset file_temporary_path "/tmp"
 drush vset date_default_timezone "America/New_York"
 drush vset site_default_country "US"
+ 
+drush en admin_views -y
 
 drush cc all
 

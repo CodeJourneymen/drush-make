@@ -11,6 +11,7 @@ projects[] = date
 ;projects[] = calendar
 ; Utility modules
 projects[] = admin_menu
+projects[] = admin_views
 projects[] = advanced_help
 projects[] = environment_indicator
 projects[] = module_filter
