@@ -2,22 +2,30 @@
 # arguments <dbname> <email>
 if [ -z $1 ]
 then 
-	echo "Arguments <dbanme> <password> <email>"
+	echo "Arguments <dbanme> <password> <email> <0 for bootstrap3.0>"
   exit
 fi
 if [ -z $2 ]
 then 
-	echo "Arguments <dbanme> <password> <email>"
+	echo "Arguments <dbanme> <password> <email> <0 for bootstrap3.0>"
   exit
 fi
 if [ -z $3 ]
 then 
-	echo "Arguments <dbanme> <password> <email>"
+	echo "Arguments <dbanme> <password> <email> <0 for bootstrap3.0>"
   exit
 fi
 
 # Use a drush makefile
-drush make drupal7.drush.make $1 -y
+#if [ $4 = "0" ]
+#then
+#	echo "Building with Bootstrap"
+#  drush make drupal7_bootstrap3.0.drush.make $1 -y
+#else
+#	echo "Building without Bootstrap"
+  drush make drupal7.drush.make $1 -y
+#fi
+
 
 cd $1
 drush si --db-url=mysqli://root:root@localhost/$1 --account-name=superadmin --account-pass=$2 --site-name=$1 --site-mail=$3 -y
@@ -57,11 +65,7 @@ drush en libraries -y
 #devel stuff
 drush en devel -y
 drush en devel_generate -y
-#drush en omega_tools -y
-#drush en delta -y
-#drush en delta_ui -y
-#drush en delta_color -y
-#drush en delta_blocks -y
+drush en simplehtmldom -y
 
 #drush en entityreference -y
 #drush en entityreference_prepopulate -y

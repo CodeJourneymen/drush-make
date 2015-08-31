@@ -1,11 +1,14 @@
 #
 # When I create a new pantehon install, I want my usual modules
 #
+echo ""
+echo "Installing Standard modules on top of Pantheon"
+echo ""
 
 drush dl views
 drush dl ctools
 drush dl date
-drush dl calendar
+#drush dl calendar
 drush dl admin_menu
 drush dl admin_views
 drush dl advanced_help
@@ -18,11 +21,15 @@ drush dl context
 drush dl entity
 drush dl token
 drush dl rules
+# DEVEL
 drush dl devel
+drush dl devel_themer
+# need this version for devel themer
+drush dl simplehtmldom-1.12
+#
 drush dl fpa
 drush dl libraries
 drush dl og
-drush dl bootstrap
 drush dl jquery_update
 drush dl og_extras
 drush dl entityreference
@@ -30,14 +37,26 @@ drush dl entityreference_prepopulate
 drush dl views_bulk_operations
 drush dl ife
 drush dl panels
-drush dl panelizer
+#drush dl panelizer-3.dev
 drush dl adminimal_theme
-drush dl adminimal_admin_menu-7.x-1.x-dev
-drush dl views_bootstrap
-drush dl panels_bootstrap_layouts
-drush dl media-7.x-2.0-alpha3
+drush dl adminimal_admin_menu-1.x-dev
+# bootstrap
+drush dl bootstrap
+drush dl views_bootstrap-7.x-3.x-dev
+drush dl panels_bootstrap_layouts-7.x-3.x-dev
+drush dl bootstrap_fieldgroup
+#
+# Radix
+drush dl radix
+drush dl radix_layouts
+drush dl radix_views
+#
+drush dl media-2.0-beta1
 drush dl file_entity
 drush dl ckeditor
+# Test Display Suite
+#drush dl ds
+#drush dl ds_bootstrap_layouts
 
 
 
@@ -64,8 +83,8 @@ drush en strongarm -y
 
 drush en entity -y
 drush en entity_token -y
-drush en rules -y
-drush en rules_admin -y
+#drush en rules -y
+#drush en rules_admin -y
 
 drush en token -y
 drush en libraries -y
